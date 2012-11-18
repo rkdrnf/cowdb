@@ -1,0 +1,255 @@
+
+@media print {
+@page {
+		size: a4;
+	}
+
+	#wrapper {
+		width: 595px;
+		height: 842px;
+		margin: 0 auto;
+	}
+
+
+
+	.lalign {
+		text-align: left;
+	}
+	.ralign {
+		text-align: right;
+	}
+	.calign {
+		text-align: center;
+	}
+
+	.size1 {
+		font-size: 11px;
+	}
+
+	.size2 {
+		font-size: 12px;
+	}
+	.size3 {
+		font-size: 16px;
+	}
+
+	.size4 {
+		font-size: 19px;
+	}
+
+
+	* {
+		font-family: "Verdana";
+	}
+
+	.bold {
+		font-weight: bold;
+	}
+	#logo {
+		float:left;
+		width: 60px;
+		height: 60px;
+		margin-left: 20px;
+	}
+
+	#head-padding {
+		float: right;
+		width: 60px;
+		height: 60px;
+		margin-right: 20px;
+	}
+
+	h1, h2, h4 {
+		text-align: center;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	h1 {
+		font-size: 25px;
+		font-weight: bold;
+		font-style: italic;
+		margin-top: 20px;
+	}
+
+	h2 {
+		font-size: 21px;
+		font-weight: bold;
+	}
+
+	h4 {
+		font-size: 15px;
+		font-weight: normal;
+		margin-bottom: 30px;
+	}
+
+	#cow-table {
+		margin: 0 auto;
+		width: 100%;
+
+		.head {
+			width: 100px;
+		}
+
+		.c1 {
+		}
+
+		.c2 {
+			width: 260px;
+		}
+
+		#gene-box {
+			height: 260px;
+			vertical-align: top;
+		}
+
+		#sire-dam {
+			height: 40px;
+		}
+
+		#sire td, #dam td {
+			height: 110px;
+			vertical-align: top;
+		}
+
+	}
+		
+	#gene-list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			float: left;
+			padding: 8px;
+		}
+	}
+}
+
+@media screen {
+
+	#wrapper {
+		width: 595px;
+		height: 842px;
+		margin: 0 auto;
+	}
+
+@page {
+		size: a4;
+	}
+
+
+	.lalign {
+		text-align: left;
+	}
+	.ralign {
+		text-align: right;
+	}
+	.calign {
+		text-align: center;
+	}
+
+	.size1 {
+		font-size: 11px;
+	}
+
+	.size2 {
+		font-size: 12px;
+	}
+	.size3 {
+		font-size: 16px;
+	}
+
+	.size4 {
+		font-size: 19px;
+	}
+
+
+	* {
+		font-family: "Verdana";
+	}
+
+	.bold {
+		font-weight: bold;
+	}
+	#logo {
+		float:left;
+		width: 60px;
+		height: 60px;
+		margin-left: 20px;
+	}
+
+	#head-padding {
+		float: right;
+		width: 60px;
+		height: 60px;
+		margin-right: 20px;
+	}
+
+	h1, h2, h4 {
+		text-align: center;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	h1 {
+		font-size: 25px;
+		font-weight: bold;
+		font-style: italic;
+		margin-top: 20px;
+	}
+
+	h2 {
+		font-size: 21px;
+		font-weight: bold;
+	}
+
+	h4 {
+		font-size: 15px;
+		font-weight: normal;
+		margin-bottom: 30px;
+	}
+
+	#cow-table {
+		margin: 0 auto;
+		width: 100%;
+
+		.head {
+			width: 100px;
+		}
+
+		.c1 {
+		}
+
+		.c2 {
+			width: 260px;
+		}
+
+		#gene-box {
+			height: 260px;
+			vertical-align: top;
+		}
+
+		#sire-dam {
+			height: 40px;
+		}
+
+		#sire td, #dam td {
+			height: 110px;
+			vertical-align: top;
+		}
+
+	}
+		
+	#gene-list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			float: left;
+			padding: 8px;
+		}
+	}
+}
+

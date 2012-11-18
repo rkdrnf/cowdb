@@ -1,0 +1,18 @@
+<tr>
+	<th>
+		유전자마커이름
+	</th>
+	<td>
+		<%= text_field_tag "gene[][name]", name, :disabled => disabled %>
+		<% if disabled %>
+			<%= hidden_field_tag "gene[][name]", name %>
+	<% end %>
+	</td>
+	<th>
+		유전자정보
+	</th>
+	<td>
+		<%= text_field_tag "gene[][f_gene]", "", :maxlength => 3 %> / <%= text_field_tag "gene[][m_gene]", "", :maxlength => 3 %> 
+	</td>
+</tr>
+

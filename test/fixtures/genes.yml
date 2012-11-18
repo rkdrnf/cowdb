@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  f_gene: 1
+  m_gene: 1
+  cow_id: 1
+
+two:
+  name: MyString
+  f_gene: 1
+  m_gene: 1
+  cow_id: 1

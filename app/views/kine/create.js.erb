@@ -1,0 +1,22 @@
+<% if success then %>
+		alert('생성되었습니다.');
+	$('#new-cow-form').dialog("close");
+	$.ajax({
+		url: "/kine/new",
+		type: "get",
+		dataType: "script",
+	});
+
+	var $cowRow = $('<%= j(render :partial => "cow_row", :locals => {:c => @cow}) %>');
+
+	$('#kine-table').append($cowRow);
+
+	attachEvent();
+	initUI();
+
+
+<% else %>
+	<% unless error2.length == 0 %>
+		alert("<%= error2 %>");
+	<% end %>
+<% end %>

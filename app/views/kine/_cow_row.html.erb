@@ -1,0 +1,18 @@
+<tr class="cow-item">
+	<td>
+		<%= link_to c.name, cow_path(c), :class => "buttonize" %>
+	</td>
+	<td>
+		<%= c.code %>
+	</td>
+	<td>
+		<%= c.gender_str %>
+	</td>
+	<td>
+		<%= c.birth_str %>
+	</td>
+	<td>
+		<%= link_to "삭제", cow_path(c), :method => "delete", :class => "cow-delete-button buttonize" %>
+	</td>
+</tr>
+

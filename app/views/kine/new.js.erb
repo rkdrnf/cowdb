@@ -1,0 +1,13 @@
+var $new = $('<%= j(render :partial => "new") %>');
+
+$('body').append($new);
+
+$new.dialog({
+	width: 600,
+	height: 800,
+	close: function(){
+		$('#new-cow-form').remove();
+	}
+});
+
+initUI();

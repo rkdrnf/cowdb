@@ -1,0 +1,77 @@
+<% content_for :stylesheets do %>
+	<link rel="stylesheet" href="/assets/kine.show.css" type="text/css" />
+<% end %>
+<%= image_tag "snu_logo.jpg", :alt => "cow", :id => "logo" %>
+<div id="head-padding"></div>
+<h1>Cattle Genome Bank in SNU</h1>
+<h4>서울시 관악구 관악로 1 서울대학교 수의과대학</h4>
+
+<h2>Genotype Certificate</h2>
+<h4>Case No <!-- <span class="bold">DC193101</span> --></h4>
+
+<table id="cow-table">
+	<tr>
+		<td class="size2 head lalign">NAME</td>
+		<td class="size4 bold c1 lalign"><%= @cow.name %></th>
+		<td class="size4 bold c2 calign"><%= @cow.code %></th>
+	</tr>
+	<tr>
+		<td class="size2 head lalign">DOB</td>
+		<td class="size3 c1 lalign"><%= @cow.birth_str %></td>
+		<td class="size3 c2 calign"><!-- PUREBRED --></td>
+	</tr>
+	<tr>
+		<td id="gene-box" colspan="3">
+			<ul id="gene-list">
+				<% @genes.each do |g| %>
+					<li class="gene-item">
+				<table class="gene-table">
+					<tr>
+						<td class="size2 bold calign"><%= g.name %></td>
+					</tr>
+					<tr>
+						<td class="size1 calign"><%= "#{g.f_gene}/#{g.m_gene}" %></td>
+					</tr>
+				</table>
+				</li>
+			<% end %>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td id="sire-dam" colspan="3" class="lalign">
+			<!-- span class="size4">Sire and dam qualify</span> -->
+		</td>
+	</tr>
+	<tr id="sire">
+		<td class="size2 lalign">
+			Sire
+		</td>
+		<th class="size4 bold lalign">
+			<%= @mother.name unless @mother.nil? %>
+		</td>
+		<th class="size4 bold calign">
+			<%= @mother.code unless @mother.nil? %>
+		</td>
+	</tr>
+	<tr id="dam">
+		<td class="size2 lalign">
+			Dam
+		</td>
+		<td class="size4 bold lalign">
+			<%= @father.name unless @father.nil? %>
+		</td>
+		<td class="size4 bold calign">
+			<%= @father.code unless @father.nil? %>
+		</td>
+	</tr>
+	<tr id="sig1" class="sig">
+		<td class="size2 lalign">Issue Date</td>
+		<td class="size2 lalign"><!-- Jan 10 2008 --></td>
+		<td class="size2 ralign">Adjusted to ISAG (1995) standard</td>
+	</tr>
+	<tr id="sig2" class="sig">
+		<td class="size2 lalign">Test Date</td>
+		<td class="size2 lalign"><!-- Oct 12 2007 --></td>
+		<td class="size2 ralign">Conformément au standard SIGA (1995)</td>
+	</table>

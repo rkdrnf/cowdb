@@ -1,0 +1,27 @@
+<div id="title">
+	<h1>Cattle Genome Bank in SNU</h1>
+</div>
+<%= link_to "새로운 개체 정보 입력", new_cow_path, :remote => true, :class => "buttonize" %>
+<table id="kine-table">
+	<tr>
+		<th>
+			I.D. (SNU)
+		</th>
+		<th>
+			개체번호
+		</th>
+		<th>
+			성별
+		</th>
+		<th>
+			생년월일
+		</th>
+		<th>
+			옵션
+		</th>
+	</tr>
+	<% @kine.each do |c| %>
+		<%= render :partial => "cow_row", :locals => {:c => c} %>
+<% end %>
+</table>
+

@@ -1,0 +1,65 @@
+#wrapper {
+	padding: 30px;
+
+	h1 {
+		text-align:center;
+	}
+
+	#kine-table {
+		margin: 20px 0px;
+
+		th {
+			padding: 10px;
+		}
+
+		td {
+			padding: 5px;
+			border-bottom: 1px solid #ccc;
+
+			font-size: 14px;
+		}
+	}
+
+}
+	#new-cow-table{
+
+		td {
+			padding: 3px;
+			font-size: 13px;
+
+		}
+
+		th {
+			width: 150px;
+		}
+
+
+		select {
+			width: 200px;
+		}
+
+		#b_year {
+			width: 40px;
+		}	
+		#b_month, #b_day {
+			width: 20px;
+		}
+
+		.new-gene-table {
+
+			th {
+				width: 90px;
+			}
+
+			#gene__name {
+				width: 60px;
+			}
+
+			#gene__m_gene, #gene__f_gene {
+				width: 30px;
+			}
+		}
+
+	}
+
+
